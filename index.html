@@ -13,44 +13,141 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="jquery-3.1.1.min.js"></script>
-	</head>
+	<!-- 	leaflet CSS file -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+
+</head>
 
 <body>
-	<header><h1>
+	<header>
+		<h1>
 		Budgies Beanies
-		</h1></header>
-<!-- 	begin navigation -->
+		</h1>
+	</header>
+	<!-- 	begin navigation -->
 	<nav class="navigation">
-	<ul class="showing">
-		<a href="index.html"><li>Home</li></a>
-		<a href="products.html"><li>Products</li></a>
-		<a href="register.html"><li>Contact</li></a>
-	</ul>
+		<ul class="showing">
+			<a href="#about">
+				<li class="nav-li">Home</li>
+			</a>
+			<a href="#products">
+				<li class="nav-li">Products</li>
+			</a>
+			<a href="#contact">
+				<li class="nav-li">Contact</li>
+			</a>
+		</ul>
 		<div class="handle">
 			Menu
 		</div>
 	</nav>
-
-	<div id="about">
-		<h2>
-					About
-				</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-			sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-			et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-		</p>
+	<section id="about">
+		<div class="row">
+			<div class="col-md-6" id="about">
+				<h2>
+							About
+						</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+					sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+					rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<img src="images/grey-headband.JPG">
+			</div>
+		</div>
+	</section>
+	<!-- 	end about -->
+	<div id="page-break">
+		<h1>
+				Products
+			</h1>
 	</div>
-
-	<footer id="footer">
-		<p>
-			This wesbite was created for WATS 3020 Final Project for Seattle University by Tyler Moody in 2017
-		</p>
-	</footer>
+	<!-- 	begin products page break -->
+	<section id="products"></section>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/boot-cuff.JPG">
+				<p>
+					Boot cuffs, available in a matching set!
+				</p>
+			</div>
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/grey-headband.JPG">
+			</div>
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/orange_beanie.JPG">
+			</div>
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/rainbow-scarf.JPG">
+			</div>
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/Scarf-multicolor.JPG">
+			</div>
+			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img src="images/seahawks-beanie.jpg">
+			</div>
+		</div>
+	</div>
+	</section>
+	<div class="row">
+		<section id="contact">
+			<div id="page-break">
+				<h1>
+				Let's Connect!
+			</h1>
+			</div>
+			<!-- 	End products -->
+			<!-- Begin contact form -->
+			<div class="col-xs-12 col-sm-7 col-md-6">
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+					sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+					rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea ta
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-6">
+				<div id="mapid"></div>
+			</div>
+		</section>
+	</div>
+	<!-- 	begin footer -->
+	<div id="footer" class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<ul>
+					<li class="header">Help</li>
+					<li><a href="">Returns</a></li>
+					<li><a href="">Exchange</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<ul>
+					<li class="header">Legal</li>
+					<li><a href="">Customer Privacy</a></li>
+					<li><a href="">Terms and Conditions</a></li>
+					<li><a href="">Patent Information</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<ul>
+					<li class="header">Satisfaction Gurantee</li>
+					<li>If you don't want to wear it, we don't want to make it. Contact us and let us know if something is not up to standard. We offer free exchanges and returns - no questions asked.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="main.js"></script>
+	<!-- 	leaflet JS file -->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 </body>
 
 </html>

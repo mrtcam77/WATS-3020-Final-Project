@@ -1,3 +1,4 @@
+/* universal styling */
 body{
     margin: 0;
     padding: 0;
@@ -11,40 +12,65 @@ a{
 img{
   max-width: 100%;
   height: auto;
-  margin: 0 0 10px 0;
 }
 /* centers header */
 header{
+    height: 25%;
     width: 100%;
     padding: 40px 0;
     text-align: center;
-    background-color: blue;
+    background-image: url('images/yarn.jpg');
+    filter: blur(5px);
+    background-size: 100% auto;
+}
+header h1{
+}
+#mapid{
+    height: 180px;
 }
 /* fixes footer to bottom of page */
 #footer{
-  width: 100%;
+  height: 20%;
   background-color: grey;
-  position: fixed;
-  bottom: 0;
+  padding: 10px;
 }
 /* filler to see aproximate sizing of divs */
-#products{
-  border: 2px solid black;
-  background-color: red;
+#items{
+  padding: 5px;
+  height: auto;
 }
 
+#page-break{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+#page-break h1{
+    margin: 0;
+}
 
 /* Styling for Navigation */
 .navigation{
     background color: red;
 }
 
+/* different section colors */
+#about{
+    background-color: #D2691E;
+      padding: 0px;
+}
+#products{
+      padding: 0px;
+}
+#contact{
+    padding: 0px;
+}
 nav ul{
     overflow: hidden;
     padding: 0;
     text-align: center;
     margin: 0;
-    -webkit-trtransition: max-height 0.4s;
+    -webkit-transition: max-height 0.4s;
     -ms-transition: max-height 0.4s;
     -moz-transition: max-height 0.4s;
     -o-transition: max-height 0.4s;
@@ -68,15 +94,23 @@ nav ul li{
 }
 /* break poing for lg screens (more than 1200px) */
 @media screen and (min-width:1200px){
-
+  header{
+      height: 250px;
+  }
+  
+  .nav-li{
+      width: 33%;
+  }
 }
 /* break point for medium screens (less than 1199px) */
 @media screen and (max-width:1199px){
-  width: 100%;
+  .nav-li{
+      width: 33%;
+  }
 }
 /* break point for small screens (less than 991px) */
 @media screen and (max-width:991px){
-  width: 100%;
+
 }
 /* break point for XS screens (less than 768px) */
 @media screen and (max-width:768px){
@@ -99,4 +133,3 @@ nav ul li{
     display: block;
   }
   }
-}
