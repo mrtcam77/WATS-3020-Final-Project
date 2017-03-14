@@ -16,47 +16,52 @@
 	<!-- 	leaflet CSS file -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
-
 </head>
 
 <body>
-	<header>
-		<h1>
-		Budgies Beanies
-		</h1>
-	</header>
-	<!-- 	begin navigation -->
 	<nav class="navigation">
-		<ul class="showing">
-			<a href="#about">
-				<li class="nav-li">Home</li>
-			</a>
-			<a href="#products">
-				<li class="nav-li">Products</li>
-			</a>
-			<a href="#contact">
-				<li class="nav-li">Contact</li>
-			</a>
-		</ul>
-		<div class="handle">
-			Menu
+		<!--begin navigation here -->
+		<div class="nav-container">
+			<ul class="showing">
+				<a href="#about">
+					<li class="nav-li">Home</li>
+				</a>
+				<a href="#products">
+					<li class="nav-li">Products</li>
+				</a>
+				<a href="#contact">
+					<li class="nav-li">Contact</li>
+				</a>
+				<a href="register.html">
+				<li class="nav-li"> Checkout</li>
+				</a>
+			</ul>
+			<div class="handle collapsed">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</div>
 		</div>
 	</nav>
+
+	<div class="header">
+		<img src="images/yarn.jpg">
+		<h1 class="title">
+		Budgies Beanies
+		</h1>
+	</div>
+
+	<!-- 	begin about -->
+
 	<section id="about">
-		<div class="row">
-			<div class="col-md-6" id="about">
-				<h2>
-							About
-						</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-					sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-					rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="col-md-6">
-				<img src="images/grey-headband.JPG">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12" id="about">
+					<h2>
+								Why Budgies Beanies?
+							</h2>
+					<p>
+						Living in the time of fast fashion and department stores, it's easy to lose originallity in your look. We made it our agenda to change that. We hand make every single one of our products, meaning that no two are alike. Why spend hundreds of dollars on clothes that are copied when you can wear something as unique as you are? With every purchase you make, proceeds will be donated to broke college at Seattle University.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -68,78 +73,290 @@
 	</div>
 	<!-- 	begin products page break -->
 	<section id="products"></section>
-	<div class="container-fluid">
-		<div class="row">
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/boot-cuff.JPG">
-				<p>
-					Boot cuffs, available in a matching set!
-				</p>
+	<div class="container">
+		<!-- 		Begin beanie section -->
+		<div class="beanies-break" id="product-break">
+			<h3 class="product-subhead">
+				Beanies
+			</h3>
+			<span class="glyphicon glyphicon-menu-up glyphicon-menu-up1"></span>
+		</div>
+		<div id="beanies" class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/sea-color-beanie.jpg">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Sea Beanie
+					</h4>
+						
+					</div>
+				</div>
 			</div>
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/grey-headband.JPG">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/grey-premium-beanie.jpg">
+					<span class="label label-info">$29</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Premium Grey Beanie
+					</h4>
+						
+					</div>
+				</div>
 			</div>
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/orange_beanie.JPG">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/orange_beanie.JPG">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Orange Beanie
+					</h4>
+						
+					</div>
+				</div>
 			</div>
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/rainbow-scarf.JPG">
-			</div>
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/Scarf-multicolor.JPG">
-			</div>
-			<div id="items" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/seahawks-beanie.jpg">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/tan-beanie.jpg">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Tan Beanie
+					</h4>
+						
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- 	End of beanies section -->
+		<div class="scarf-break" id="product-break">
+			<h3 class="product-subhead">
+				Scarfs
+			</h3>
+			<span class="glyphicon glyphicon-menu-up glyphicon-menu-up2"></span>
+		</div>
+		<!-- 		Begin Scarf Section -->
+		<div id="scarfs" class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/Scarf-multicolor.JPG">
+					<span class="label label-info">$39</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Tan Scarf
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/green-black-scarff.jpg">
+					<span class="label label-info">$29</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Green and Black Scarf
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/rainbow-scarf.JPG">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Rainbow Scarf
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/thin-black-white-scarff.jpg">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Thin Black and White Scarf
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 		end scarf section -->
+		<div class="misc-break" id="product-break">
+			<h3 class="product-subhead">
+				Miscellaneous
+			</h3>
+			<span class="glyphicon glyphicon-menu-up glyphicon-menu-up3"></span>
+		</div>
+		<!-- 		Begin Misc Section -->
+		<div id="misc" class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/blue-fingerless-mittens.jpg">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Blue Fingerless Mittens
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/boot-cuff.JPG">
+					<span class="label label-info">$19</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Boot Cuffs
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/tan-headband-bow.jpg">
+					<span class="label label-info">$15</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Tan Bow Headband
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div id="items">
+					<img src="images/carrying-pouch.jpg">
+					<span class="label label-info">$24</span>
+					<a href="#" class="add-to-cart" role="button">Add To Cart</a>
+					<div class="caption">
+						<h4>
+						Carrying Pouch
+					</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 		end Misc Section -->
 	</div>
+	<!--closing container fluid tag for products-->
 	</section>
-	<div class="row">
-		<section id="contact">
-			<div id="page-break">
-				<h1>
+	<div class="container-fluid">
+		<div class="row">
+			<section id="contact">
+				<div id="page-break">
+					<h1>
 				Let's Connect!
 			</h1>
-			</div>
-			<!-- 	End products -->
-			<!-- Begin contact form -->
-			<div class="col-xs-12 col-sm-7 col-md-6">
-				<p>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-					sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-					rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea ta
-				</p>
-			</div>
-			<div class="col-xs-12 col-sm-5 col-md-6">
-				<div id="mapid"></div>
-			</div>
-		</section>
+				</div>
+				<!-- 	End products -->
+				<!-- Begin contact form -->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-md-push-4">
+					<p class="connect-p">
+					 Good things happen together. Checkout current Crochet trends on twitter, or find a local Washington yarn store near you!
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-md-pull-4">
+					<div id="mapid"></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<a class="twitter-timeline" href="https://twitter.com/hashtag/crochet" data-widget-id="841384541583433729">#crochet Tweets</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0],
+								p = /^http:/.test(d.location) ? 'http' : 'https';
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = p + "://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, "script", "twitter-wjs");
+					</script>
+
+				</div>
+			</section>
+		</div>
 	</div>
 	<!-- 	begin footer -->
 	<div id="footer" class="container-fluid">
 		<div class="row">
-			<div class="col-xs-6 col-sm-4">
+			<div class="col-xs-6 col-sm-6 col-md-2">
 				<ul>
-					<li class="header">Help</li>
-					<li><a href="">Returns</a></li>
-					<li><a href="">Exchange</a></li>
-					<li><a href="">Contact Us</a></li>
+					<li id="header">
+						<h4>Help</h4></li>
+					<li class="foot-links"><a href="">Returns</a></li>
+					<li class="foot-links"><a href="">Exchange</a></li>
+					<li class="foot-links"><a href="">Contact Us</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-6 col-sm-4">
+			<div class="col-xs-6 col-sm-6 col-md-2">
 				<ul>
-					<li class="header">Legal</li>
-					<li><a href="">Customer Privacy</a></li>
-					<li><a href="">Terms and Conditions</a></li>
-					<li><a href="">Patent Information</a></li>
+					<li id="header">
+						<h4>Legal</h4></li>
+					<li class="foot-links"><a href="">Customer Privacy</a></li>
+					<li class="foot-links"><a href="">Terms and Conditions</a></li>
+					<li class="foot-links"><a href="">Patent Information</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<ul>
-					<li class="header">Satisfaction Gurantee</li>
+					<li id="header">
+						<h4>Satisfaction Gurantee</h4></li>
 					<li>If you don't want to wear it, we don't want to make it. Contact us and let us know if something is not up to standard. We offer free exchanges and returns - no questions asked.</li>
 				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 colfooter-social-icons">
+				<h4 class="_14">Follow us on</h4>
+				<ul class="social-icons">
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div clas="col-xs-12">
+				<p class="disclaimer">
+					Pleas note, this site was created as a school final project. Products are NOT for sale.
+				</p>
 			</div>
 		</div>
 	</div>
